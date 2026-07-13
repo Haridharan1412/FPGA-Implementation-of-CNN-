@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=400&section=header&text=FPGA%20Implementation%20Of%20Convolutional%20Neural%20Networks%20For%20Brain%20Tumor%20Detection%20&fontSize=40&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc&descAlignY=60&descSize=15" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=FPGA%40Implementation%40Of%20Convolutional%40Neural%20Networks%40For%40Brain%40Tumor%40Detection%40&fontSize=40&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc&descAlignY=60&descSize=15" width="100%"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2500&pause=800&color=00D4FF&center=true&vCenter=true&multiline=true&width=800&height=80&lines=⚡+Hardware-Accelerated;📡+Real-Time+CNN+Inference+for+Medical+Diagnostics)](https://git.io/typing-svg)
 
