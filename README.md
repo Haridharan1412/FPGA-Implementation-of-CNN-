@@ -1,12 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=FPGA%20Implementation%20Of%20Convolutional%20Neural%20Networks%20For%20Brain%20Tumor%20Detection%20&fontSize=40&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Real-Time%20IoT%20Safety%20Guardian%20Powered%20by%20ESP8266%20%2B%20Blynk&descAlignY=60&descSize=15" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=400&section=header&text=FPGA%20Implementation%20Of%20Convolutional%20Neural%20Networks%20For%20Brain%20Tumor%20Detection%20&fontSize=40&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Real-Time%20IoT%20Safety%20Guardian%20Powered%20by%20ESP8266%20%2B%20Blynk&descAlignY=60&descSize=15" width="100%"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2500&pause=800&color=00D4FF&center=true&vCenter=true&multiline=true&width=800&height=80&lines=⚡+Hardware-Accelerated;📡+Real-Time+CNN+Inference+for+Medical+Diagnostics)](https://git.io/typing-svg)
 
 <br/>
-
-### Hardware-Accelerated, Real-Time CNN Inference for Medical Diagnostics
 
 [![Made with FPGA](https://img.shields.io/badge/Made%20with-FPGA-blueviolet?style=for-the-badge&logo=chip&logoColor=white)](#)
 [![CNN](https://img.shields.io/badge/Model-CNN-orange?style=for-the-badge&logo=tensorflow&logoColor=white)](#)
@@ -14,12 +12,6 @@
 [![Vivado/Quartus](https://img.shields.io/badge/Toolchain-Vivado%20%7C%20Quartus%20Prime-red?style=for-the-badge&logo=xilinx&logoColor=white)](#)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](#-license)
 
-[![Status](https://img.shields.io/badge/Status-Academic%20Project-yellow?style=flat-square)](#)
-[![Institution](https://img.shields.io/badge/Institution-VIT%20Chennai-004990?style=flat-square)](#)
-[![Program](https://img.shields.io/badge/B.Tech-ECE-1e3a8a?style=flat-square)](#)
-[![Board](https://img.shields.io/badge/Target%20Board-Genesys%202-2b6cb0?style=flat-square)](#)
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/fpga-cnn-brain-tumor-detection?style=flat-square)
-![GitHub repo size](https://img.shields.io/github/repo-size/your-username/fpga-cnn-brain-tumor-detection?style=flat-square)
 
 <sub>⚡ Parallel Processing &nbsp;|&nbsp; 🎯 Q8.8 Fixed-Point CNN &nbsp;|&nbsp; 🖥️ Software vs. FPGA Benchmarking &nbsp;|&nbsp; 🔋 Low-Power Diagnostics</sub>
 
