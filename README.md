@@ -41,29 +41,6 @@ flowchart TD
 
 ---
 
-## 🎯 Motivation & Problem Statement
-
-Convolutional Neural Networks have proven highly effective for image classification and pattern recognition, making them valuable for medical imaging tasks such as locating tumors in MRI scans. However, classical CNN inference on CPUs and GPUs carries high latency, high power demand, and limited scalability — significant drawbacks for real-time clinical diagnosis.
-
-This project addresses that gap by implementing CNNs on **Field Programmable Gate Arrays (FPGAs)**, which process data in parallel and allow custom logic tailored to the CNN topology, improving both speed and power efficiency. The goal is a real-time, high-performance, energy-efficient brain tumor detection system capable of managing the computational demands of CNN inference within the practical constraints of healthcare diagnostics — designing, training, and deploying a CNN architecture on FPGA hardware to deliver a resource-efficient, scalable solution for precise and rapid MRI-based tumor detection.
-
-### Research Gaps Identified
-
-- **Performance bottlenecks** — limitations in processing speed/efficiency of CNNs on FPGA relative to CPU/GPU, and resource pressure on LUTs, DSPs, and memory.
-- **Scalability issues** — challenges in scaling CNN architectures across different network sizes, layer types, and input variations while managing FPGA resource allocation.
-
-## 🌍 Relevance to Sustainable Development Goals
-
-The project aligns with the following UN Sustainable Development Goals:
-
-| SDG | Alignment |
-|-----|-----------|
-| **Goal 3 — Good Health and Well-being** | Faster, more accurate tumor detection enables early intervention and improved patient care. |
-| **Goal 9 — Industry, Innovation and Infrastructure** | Advances FPGA technology for AI applications, promoting responsible innovation and resilient infrastructure. |
-| **Goal 11 — Sustainable Cities and Communities** | Energy-efficient, real-time processing extends to broader smart-city and urban-system applications. |
-
----
-
 ## ✅ Objectives
 
 - **Real-Time Processing** — implement a hardware-accelerated CNN on FPGA for real-time analysis of brain MRI images.
