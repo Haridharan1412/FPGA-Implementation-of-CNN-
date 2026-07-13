@@ -10,7 +10,6 @@
 [![CNN](https://img.shields.io/badge/Model-CNN-orange?style=for-the-badge&logo=tensorflow&logoColor=white)](#)
 [![Verilog](https://img.shields.io/badge/HDL-Verilog-informational?style=for-the-badge&logo=v&logoColor=white)](#)
 [![Vivado/Quartus](https://img.shields.io/badge/Toolchain-Vivado%20%7C%20Quartus%20Prime-red?style=for-the-badge&logo=xilinx&logoColor=white)](#)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](#-license)
 
 </div>
 
@@ -200,119 +199,6 @@ The design follows a structured progression from software training to FPGA deplo
 > [!NOTE]
 > These summary metrics are as reported in the project poster. The verification methodology compared FPGA output against the software model via simulation and real-time testing with new MRI scans (see [Methodology](#-methodology--design-approach)).
 
-### Validation Approach
-
-- **Software vs. Hardware** — the FPGA-based model's output was validated against the Google Colab–trained software model, with results closely matching.
-- **Compilation & Simulation** — the design compiled without major syntax/semantic errors; simulation with multiple test cases confirmed functional correctness and timing alignment.
-- **Real-Time Processing** — the FPGA implementation demonstrated real-time capability with minimal latency.
-
----
-
-## 📁 Repository Structure
-
-> [!IMPORTANT]
-> The structure below is a **suggested organization** for this repository. Update it to match your actual folder/file layout.
-
-```text
-fpga-cnn-brain-tumor-detection/
-├── docs/
-│   ├── images/
-│   │   ├── block_diagram.png      # System block diagram (used in this README)
-│   │   ├── rtl_schematic.png      # Post-synthesis RTL schematic (used in this README)
-│   │   └── accuracy_chart.png     # Per-class accuracy chart (used in this README)
-│   ├── Flow_chart.pdf             # Project poster / summary
-│   └── PROJECT_REPORT.docx        # Full project report
-├── model/
-│   ├── cnn_training.ipynb         # CNN design & training (Google Colab / TensorFlow)
-│   ├── weight_extraction.m        # Weight/bias extraction & Q8.8 conversion (MATLAB)
-│   └── saved_model/               # Trained model artifacts
-├── fpga/
-│   ├── rtl/
-│   │   ├── cnn_top.v               # Top-level pipeline module
-│   │   ├── conv2d.v                 # Convolution module
-│   │   ├── relu.v                   # ReLU activation module
-│   │   ├── max_pooling.v            # Max pooling module
-│   │   └── fully_connected.v        # Fully connected layer module
-│   ├── mem/                       # $readmemh weight/bias files
-│   ├── testbenches/                # Verification testbenches
-│   └── constraints/                # Timing/pin constraint files (Genesys 2)
-├── presentation/
-│   └── ppt.pptx                   # Project presentation slides
-├── results/
-│   └── accuracy_metrics.md        # Per-class accuracy & benchmark results
-├── LICENSE
-└── README.md
-```
-
----
-
-## 🚀 Getting Started
-
-> [!NOTE]
-> These are template setup steps — adjust commands, paths, and board part numbers to match your actual codebase.
-
-<details>
-<summary><strong>Prerequisites</strong></summary>
-
-- Python 3.x with TensorFlow (CNN training)
-- MATLAB (weight/bias Q8.8 conversion)
-- Xilinx Vivado (WebPACK) or Intel Quartus Prime
-- Digilent Genesys 2 FPGA board (or equivalent)
-- Labeled brain MRI dataset (tumor / no-tumor, with tumor subtypes)
-
-</details>
-
-<details>
-<summary><strong>1. Clone the repository</strong></summary>
-
-```bash
-git clone https://github.com/your-username/fpga-cnn-brain-tumor-detection.git
-cd fpga-cnn-brain-tumor-detection
-```
-
-</details>
-
-<details>
-<summary><strong>2. Train the CNN model</strong></summary>
-
-```bash
-# Run in Google Colab or locally with TensorFlow
-python model/cnn_training.py
-```
-
-</details>
-
-<details>
-<summary><strong>3. Extract and convert weights/biases to Q8.8</strong></summary>
-
-```matlab
-% MATLAB: convert trained weights/biases to Q8.8 fixed-point .mem files
-run('model/weight_extraction.m')
-```
-
-</details>
-
-<details>
-<summary><strong>4. Simulate and synthesize the Verilog design</strong></summary>
-
-```bash
-# Open the RTL project in Vivado or Quartus Prime, run behavioral simulation,
-# then synthesis, implementation, and bitstream generation
-```
-
-</details>
-
-<details>
-<summary><strong>5. Program the FPGA and run inference</strong></summary>
-
-```text
-Load the bitstream onto the Genesys 2 board, stream a preprocessed
-64x64 grayscale MRI image into cnn_top, and read the 4-bit encoded
-classification result.
-```
-
-</details>
-
 ---
 
 ## ⚠️ Limitations & Constraints
@@ -321,14 +207,6 @@ classification result.
 - **Fixed-point arithmetic precision** — Q8.8 quantization reduces precision relative to floating-point software CNNs, resulting in minor accuracy deviations.
 - **Complexity in hardware mapping** — translating the CNN architecture into Verilog is labor-intensive and requires expertise, particularly when validating layer functionality for real-time performance.
 - **Dataset limitations** — model performance and generalizability depend on the quality and variability of the MRI dataset used.
-
-## 🔭 Future Work
-
-- **Advanced FPGA platforms** — higher-capacity boards with more DSP slices and memory to reduce reliance on quantization.
-- **Refined optimization techniques** — advanced model compression, improved quantization, or sparsity-promoting training.
-- **Diverse and extensive datasets** — broader MRI datasets across tumor types and brain regions to improve adaptability.
-- **Hybrid cloud integration** — combining FPGA hardware with cloud computing for flexible, scalable hybrid systems.
-- **Clinical environment testing** — real-world trials with live MRI data to assess practical utility and diagnostic effectiveness.
 
 ---
 
@@ -343,17 +221,7 @@ classification result.
 - **Energy efficiency** — FPGA implementations are significantly more energy-efficient than CPU/GPU counterparts, supporting sustainable large-scale AI deployment.
 - **Resource optimization** — quantization, pruning, and efficient memory management reduce the environmental footprint of high-complexity AI models.
 
-## 💰 Cost Analysis
-
-No direct expenses were incurred in this project:
-
-| Category | Cost Basis |
-|----------|-----------|
-| **Hardware** | FPGA board and components provided by the institution |
-| **Software** | Google Colab and MATLAB used free of charge; FPGA tools used via free/WebPACK editions |
-| **Additional Resources** | Research papers and documentation accessed through institutional resources |
-
-The project was completed at **zero cost**, demonstrating the feasibility of FPGA-based CNN projects within a budget-free setup.
+---
 
 ## 🏁 Conclusion
 
@@ -384,12 +252,6 @@ This project designed and implemented a CNN on FPGA hardware for brain tumor det
 B.Tech, Electronics and Communication Engineering
 Vellore Institute of Technology (VIT), Chennai
 Supported by **V-NEST** (VIT Chennai Startup and Research Foundation)
-
-## 📄 License
-
-This project is released under the [MIT License](LICENSE). Update this section if a different license applies.
-
----
 
 <div align="center">
 
