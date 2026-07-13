@@ -196,30 +196,14 @@ The design follows a structured progression from software training to FPGA deplo
 
 </div>
 
-> [!NOTE]
-> These summary metrics are as reported in the project poster. The verification methodology compared FPGA output against the software model via simulation and real-time testing with new MRI scans (see [Methodology](#-methodology--design-approach)).
-
 ---
 
-## ⚠️ Limitations & Constraints
-
-- **Resource limitations on FPGA** — the Genesys 2 board's restricted resources required quantization and pruning, which could slightly impact overall accuracy.
-- **Fixed-point arithmetic precision** — Q8.8 quantization reduces precision relative to floating-point software CNNs, resulting in minor accuracy deviations.
-- **Complexity in hardware mapping** — translating the CNN architecture into Verilog is labor-intensive and requires expertise, particularly when validating layer functionality for real-time performance.
-- **Dataset limitations** — model performance and generalizability depend on the quality and variability of the MRI dataset used.
-
----
-
-## 🌱 Social & Environmental Impact
+## 🌱 Social Impact
 
 **Social:**
 - **Healthcare innovation** — real-time MRI tumor detection has life-saving potential through early, reliable diagnoses, and can extend diagnostic access to remote and underserved areas.
 - **Safety in autonomous systems** — the same FPGA-accelerated CNN approach can improve real-time decision-making in domains like autonomous vehicles and robotics.
 - **Economic and employment growth** — increasing adoption of AI hardware solutions drives demand for expertise in AI research, FPGA design, and software engineering.
-
-**Environmental:**
-- **Energy efficiency** — FPGA implementations are significantly more energy-efficient than CPU/GPU counterparts, supporting sustainable large-scale AI deployment.
-- **Resource optimization** — quantization, pruning, and efficient memory management reduce the environmental footprint of high-complexity AI models.
 
 ---
 
@@ -251,7 +235,7 @@ This project designed and implemented a CNN on FPGA hardware for brain tumor det
 **Haridharan K S** 
 B.Tech, Electronics and Communication Engineering
 Vellore Institute of Technology (VIT), Chennai
-Supported by **V-NEST** (VIT Chennai Startup and Research Foundation)
+Supported by **V-NEST** (VIT Chennai and Research Foundation)
 
 <div align="center">
 
