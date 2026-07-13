@@ -12,9 +12,6 @@
 [![Vivado/Quartus](https://img.shields.io/badge/Toolchain-Vivado%20%7C%20Quartus%20Prime-red?style=for-the-badge&logo=xilinx&logoColor=white)](#)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](#-license)
 
-
-<sub>⚡ Parallel Processing &nbsp;|&nbsp; 🎯 Q8.8 Fixed-Point CNN &nbsp;|&nbsp; 🖥️ Software vs. FPGA Benchmarking &nbsp;|&nbsp; 🔋 Low-Power Diagnostics</sub>
-
 </div>
 
 ---
