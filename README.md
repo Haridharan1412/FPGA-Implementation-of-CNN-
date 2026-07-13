@@ -143,7 +143,7 @@ The design follows a structured progression from software training to FPGA deplo
 - **Pruning** — removes redundant parameters to reduce model size without sacrificing accuracy.
 
 <div align="center">
-<img src="docs/images/rtl_schematic.png" alt="RTL schematic of the synthesized CNN hardware design" width="750"/>
+<img width="1349" height="784" alt="Image" src="https://github.com/user-attachments/assets/8824df10-7e0b-4680-a1c0-d9bb07ce6432" />
 <br/>
 <sub><strong>Fig.</strong> RTL schematic of the synthesized CNN design, generated post-synthesis in the FPGA toolchain.</sub>
 </div>
