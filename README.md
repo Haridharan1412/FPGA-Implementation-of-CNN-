@@ -127,53 +127,6 @@ The design follows a structured progression from software training to FPGA deplo
 
 ---
 
-## 🔢 Q8.8 Fixed-Point Representation
-
-FPGA hardware typically lacks efficient floating-point support, so weights and biases are represented using **Q8.8 fixed-point** format — a 16-bit word split into 8 integer bits and 8 fractional bits.
-
-| Property | Value |
-|----------|-------|
-| **Total word length** | 16 bits (Q8.8) |
-| **Value range** | −128.0 to +127.99609375 |
-| **Resolution** | 2⁻⁸ = 0.00390625 |
-| **Representation** | Two's complement (signed) |
-
-<details>
-<summary><strong>Worked conversion examples</strong></summary>
-
-**Decimal → Q8.8**
-
-```
-6.5 × 256 = 1664  →  Q8.8: 0x0680
-```
-
-**Q8.8 → Decimal**
-
-```
-0x01A0 = 416  →  416 ÷ 256 = 1.625
-```
-
-**Representing +5.25**
-```
-Integer: 5 → 00000101
-Fraction: 0.25 × 256 = 64 → 01000000
-Combined: 00000101 01000000 → 0x0540
-```
-
-**Representing −3.75 (two's complement)**
-```
-Integer: 3 → 00000011
-Fraction: 0.75 × 256 = 192 → 11000000
-Positive form: 00000011 11000000
-Invert + 1: 11111100 01000000 → 0xFC40
-```
-
-</details>
-
-**Why Q8.8:** it requires less hardware than floating-point units, enables faster and more deterministic arithmetic, but trades off dynamic range and precision — an acceptable tradeoff for low-precision neural network inference on resource-constrained FPGAs.
-
----
-
 ## ⚙️ Verilog Module Breakdown
 
 | Module | Responsibility |
