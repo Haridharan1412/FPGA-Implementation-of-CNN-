@@ -241,4 +241,7 @@ Supported by **V-NEST** (VIT Chennai and Research Foundation)
 
 <sub>⭐ If you find this project useful, consider starring the repository!</sub>
 
+<!-- Footer waving banner — no text, just the wave shape -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
+
 </div>
