@@ -171,7 +171,7 @@ The design follows a structured progression from software training to FPGA deplo
 ### Per-Class Classification Accuracy
 
 <div align="center">
-<img src="docs/images/accuracy_chart.png" alt="Per-class classification accuracy chart" width="550"/>
+<img width="1050" height="630" alt="Image" src="https://github.com/user-attachments/assets/ed8a43ed-0d55-4132-bef3-82dc7d2be5a3" />
 </div>
 
 | Tumor Class | Accuracy |
