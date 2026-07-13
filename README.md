@@ -20,7 +20,7 @@
 This project delivers a hardware-accelerated solution for brain tumor detection by implementing a **Convolutional Neural Network (CNN) on FPGA hardware**. By exploiting the parallel-processing capabilities of FPGAs, the system supports real-time CNN inference with improved efficiency, while the flexibility of the FPGA fabric allows intricate CNN models to be mapped onto hardware for faster processing and reduced power consumption — key requirements for healthcare scenarios where rapid response times matter. The approach trains a CNN on brain MRI datasets, extracts the learned weights and biases, and implements the network layer-by-layer on FPGA — beginning with a single neuron as an initial validation step and progressing to the full pipeline. The project evaluates and compares implementations across CPU, GPU, and FPGA platforms, highlighting FPGA's superior speed and energy efficiency for portable diagnostics in resource-constrained environments.
 
 <div align="center">
-<img src="docs/images/block_diagram.png" alt="Block diagram of the FPGA CNN brain tumor detection pipeline" width="850"/>
+<img width="1216" height="1294" alt="Image" src="https://github.com/user-attachments/assets/38ccf4a4-373f-4ea1-96a0-932785776117" />
 </div>
 
 <details>
